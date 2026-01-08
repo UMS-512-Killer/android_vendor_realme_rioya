@@ -31,7 +31,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/rioya/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/realme/rioya/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service.trusty:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service.trusty \
     vendor/realme/rioya/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service \
-    vendor/realme/rioya/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.1-service \
     vendor/realme/rioya/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-unisoc.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-unisoc.service \
     vendor/realme/rioya/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.2-service-xtensa:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.2-service-xtensa \
     vendor/realme/rioya/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service \
@@ -202,7 +201,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/rioya/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/realme/rioya/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc \
     vendor/realme/rioya/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service.rc \
-    vendor/realme/rioya/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.1-service.rc \
     vendor/realme/rioya/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-unisoc.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-unisoc.service.rc \
     vendor/realme/rioya/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.2-service-xtensa.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.2-service-xtensa.rc \
     vendor/realme/rioya/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
@@ -470,10 +468,15 @@ PRODUCT_COPY_FILES += \
     vendor/realme/rioya/proprietary/vendor/firmware/EXEC_CALIBRATE_MAG_IMAGE:$(TARGET_COPY_OUT_VENDOR)/firmware/EXEC_CALIBRATE_MAG_IMAGE \
     vendor/realme/rioya/proprietary/vendor/firmware/Factory_fts8006saa_Holitech_BOE.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Factory_fts8006saa_Holitech_BOE.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/Himax_HX83102D_sky_mpfw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_HX83102D_sky_mpfw.bin \
+    vendor/realme/rioya/proprietary/recovery/root/vendor/firmware/Himax_HX83102D_sky_mpfw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_HX83102D_sky_mpfw.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/Himax_mpfw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Himax_mpfw.bin \
+    vendor/realme/rioya/proprietary/recovery/root/vendor/firmware/Himax_mpfw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Himax_mpfw.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/ICNL9911.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ICNL9911.bin \
+    vendor/realme/rioya/proprietary/recovery/root/vendor/firmware/ICNL9911.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ICNL9911.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/ICNL9911_XL.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ICNL9911_XL.bin \
+    vendor/realme/rioya/proprietary/recovery/root/vendor/firmware/ICNL9911_XL.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ICNL9911_XL.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/Normal_fts8006saa_Holitech_BOE.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/Normal_fts8006saa_Holitech_BOE.bin \
+    vendor/realme/rioya/proprietary/recovery/root/vendor/firmware/Normal_fts8006saa_Holitech_BOE.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/Normal_fts8006saa_Holitech_BOE.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/PortraitSegHP.tflite:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegHP.tflite \
     vendor/realme/rioya/proprietary/vendor/firmware/PortraitSegHP_cadence.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegHP_cadence.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/PortraitSegHP_network.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/PortraitSegHP_network.bin \
@@ -489,6 +492,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/rioya/proprietary/vendor/firmware/fdr_cadence.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fdr_cadence.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/focalfp.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/focalfp.elf \
     vendor/realme/rioya/proprietary/vendor/firmware/focaltech-FT5x46.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech-FT5x46.bin \
+    vendor/realme/rioya/proprietary/recovery/root/vendor/firmware/focaltech-FT5x46.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech-FT5x46.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/fpsensor.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/fpsensor.elf \
     vendor/realme/rioya/proprietary/vendor/firmware/hdr_cadence.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/hdr_cadence.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/hx_criteria_SKY.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/hx_criteria_SKY.csv \
@@ -506,8 +510,10 @@ PRODUCT_COPY_FILES += \
     vendor/realme/rioya/proprietary/vendor/firmware/portraitseg_network.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/portraitseg_network.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/silead.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/silead.elf \
     vendor/realme/rioya/proprietary/vendor/firmware/sky_ili9882q.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sky_ili9882q.bin \
+    vendor/realme/rioya/proprietary/recovery/root/vendor/firmware/sky_ili9882q.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/sky_ili9882q.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/test_lib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/test_lib.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/txd_ili7806s.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txd_ili7806s.bin \
+    vendor/realme/rioya/proprietary/recovery/root/vendor/firmware/txd_ili7806s.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/txd_ili7806s.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/vdsp_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/vdsp_firmware.bin \
     vendor/realme/rioya/proprietary/vendor/firmware/warp_cadence.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/warp_cadence.bin \
     vendor/realme/rioya/proprietary/vendor/lib/arm.graphics-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk.so \
@@ -1019,7 +1025,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/rioya/proprietary/vendor/lib64/libfp_ext_svc2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfp_ext_svc2.so \
     vendor/realme/rioya/proprietary/vendor/lib64/libgnssmgt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnssmgt.so \
     vendor/realme/rioya/proprietary/vendor/lib64/libgyrostab.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgyrostab.so \
-    vendor/realme/rioya/proprietary/vendor/lib64/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwc2onfbadapter.so \
     vendor/realme/rioya/proprietary/vendor/lib64/libimpl-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimpl-ril.so \
     vendor/realme/rioya/proprietary/vendor/lib64/libinfo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libinfo.so \
     vendor/realme/rioya/proprietary/vendor/lib64/libinterface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libinterface.so \
@@ -1257,18 +1262,18 @@ PRODUCT_COPY_FILES += \
     vendor/realme/rioya/proprietary/vendor/media/engtest_sample.pcm:$(TARGET_COPY_OUT_VENDOR)/media/engtest_sample.pcm
 
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.biometrics.fingerprint@2.1-service-sprd \
     android.hardware.gatekeeper@1.0-service.trusty \
     android.hardware.keymaster@4.1-unisoc.service \
-    android.hardware.thermal@2.0-service \
-    lights \
+    android.hardware.thermal@2.0-service-sprd \
+    lights-sprd \
     manifest \
     manifest_android.hardware.drm@1.3-service.widevine \
     manifest_dualsim \
     manifest_face \
-    vendor-power-default \
+    vendor-power-sprd \
     vendor.sprd.hardware.fingerprintmmi@1.0-service \
     vendor.sprd.hardware.gnss@2.1-service \
     vendor.sprd.hardware.thermal@2.0-service \
     vendor.sprd.hardware.vdsp@1.0-service-lazy \
-    vibrator
+    vibrator-sprd
